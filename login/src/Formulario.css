@@ -1,0 +1,85 @@
+
+.formulario-login-full {
+  min-height: 100vh;
+  width: 100vw;
+  background: #0057b8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.formulario-login-full-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 16px;
+}
+
+.formulario-login-full-form h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario-login-full-form label {
+  font-weight: 500;
+  color: #fff;
+}
+
+.formulario-login-full-form input[type="email"],
+.formulario-login-full-form input[type="password"] {
+  padding: 12px 14px;
+  border: 1.5px solid #fff;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  outline: none;
+  background: #e6f0ff;
+  color: #0057b8;
+  margin-bottom: 2px;
+  transition: border-color 0.2s;
+}
+
+.formulario-login-full-form input:focus {
+  border-color: #61dafb;
+}
+
+.formulario-login-full-form button {
+  background: #fff;
+  color: #0057b8;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.formulario-login-full-form button:disabled {
+  background: #b0c4de;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .formulario-login-full-form {
+    max-width: 98vw;
+    padding: 24px 4px;
+  }
+  .formulario-login-full-form h2 {
+    font-size: 1.3rem;
+  }
+}
